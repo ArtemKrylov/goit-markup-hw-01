@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Web Studio</title>
   </head>
-  <body>
-    <header class="main-header">
+
+  <body class="homepage">
+    <header class="homepage-header">
       <a class="cite-logo header-logo" href="/" rel="Домашня сторінка"><span>Web</span>Studio</a>
       <nav class="navigation">
         <ul>
@@ -21,88 +22,133 @@
       <a class="phone-number" href="tel:+380961111111">+38 096 111 11 11</a>
       <article class="banner">
         <h1 class="banner-text">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button banner-button">Замовити послугу</button>
+        <button class="button banner-button" type="button">Замовити послугу</button>
       </article>
     </header>
 
-    <section class="peculiarities">
-      <h2 class="peculiarities-header">Особливості</h2>
-      <article class="peculiarity">
-        <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-        <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-      </article>
-      <article class="peculiarity">
-        <h3>ПУНКТУАЛЬНІСТЬ</h3>
-        <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-      </article>
-      <article class="peculiarity">
-        <h3>ПЛАНУВАННЯ</h3>
-        <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-      </article>
-      <article class="peculiarity">
-        <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-        <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-      </article>
-    </section>
+    <main class="homepage-main">
+      <section class="peculiarities">
+        <h2 class="peculiarities-header">Особливості</h2>
+        <ul class="peculiarities-cards">
+          <li>
+            <article class="peculiarity-card">
+              <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+            </article>
+          </li>
+          <li>
+            <article class="peculiarity-card">
+              <h3>ПУНКТУАЛЬНІСТЬ</h3>
+              <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            </article>
+          </li>
+          <li>
+            <article class="peculiarity-card">
+              <h3>ПЛАНУВАННЯ</h3>
+              <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+            </article>
+          </li>
+          <li>
+            <article class="peculiarity-card">
+              <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            </article>
+          </li>
+        </ul>
+      </section>
 
-    <section class="proficiencies">
-      <h2 class="proficiencies-title">Чим ми займаємося</h2>
-      <img
-        class="proficiencies-image"
-        alt="coding"
-        src="./images/proficiencies/proficiency-first-min.jpg"
-      />
-      <img
-        class="proficiencies-image"
-        alt="user interface design"
-        src="./images/proficiencies/proficiency-second-min.jpg"
-      />
-      <img
-        class="proficiencies-image"
-        alt="styling"
-        src="./images/proficiencies/proficiency-third-min.jpg"
-      />
-    </section>
+      <section class="proficiencies">
+        <h2 class="proficiencies-title">Чим ми займаємося</h2>
+        <ul class="proficiencies-images">
+          <li>
+            <img
+              class="proficiencies-image"
+              alt="coding"
+              width="370"
+              src="./images/proficiencies/proficiency-first-min.jpg"
+            />
+          </li>
+          <li>
+            <img
+              class="proficiencies-image"
+              alt="user interface design"
+              width="370"
+              src="./images/proficiencies/proficiency-second-min.jpg"
+            />
+          </li>
+          <li>
+            <img
+              class="proficiencies-image"
+              alt="styling"
+              width="370"
+              src="./images/proficiencies/proficiency-third-min.jpg"
+            />
+          </li>
+        </ul>
+      </section>
 
-    <section class="team">
-      <h2 class="team-header">Наша команда</h2>
-      <article class="team-card">
-        <img
-          class="team-image"
-          src="./images/team/team-product-designer-min.jpg"
-          alt="Product Designer"
-        />
-        <h3 class="name">Ігор Дем'яненко</h3>
-        <p class="job">Product Designer</p>
-      </article>
-      <article class="team-card">
-        <img
-          class="team-image"
-          src="./images/team/team-frontend-developer-min.jpg"
-          alt="Frontend Developer"
-        />
-        <h3 class="name">Ольга Рєпіна</h3>
-        <p class="job">Frontend Developer</p>
-      </article>
-      <article class="team-card">
-        <img class="team-image" src="./images/team/team-marketing-min.jpg" alt="Marketing" />
-        <h3 class="name">Микола Тарасов</h3>
-        <p class="job">Marketing</p>
-      </article>
-      <article class="team-card">
-        <img class="team-image" src="./images/team/team-ui-designer-min.jpg" alt="UI Designer" />
-        <h3 class="name">Михайло Єрмаков</h3>
-        <p class="job">UI Designer</p>
-      </article>
-    </section>
+      <section class="team">
+        <h2 class="team-header">Наша команда</h2>
+        <ul class="team-images">
+          <li>
+            <article class="team-card">
+              <img
+                class="team-image"
+                alt="Product Designer"
+                width="270"
+                src="./images/team/team-product-designer-min.jpg"
+              />
+              <h3 class="name">Ігор Дем'яненко</h3>
+              <p class="job">Product Designer</p>
+            </article>
+          </li>
+          <li>
+            <article class="team-card">
+              <img
+                class="team-image"
+                alt="Frontend Developer"
+                width="270"
+                src="./images/team/team-frontend-developer-min.jpg"
+              />
+              <h3 class="name">Ольга Рєпіна</h3>
+              <p class="job">Frontend Developer</p>
+            </article>
+          </li>
+          <li>
+            <article class="team-card">
+              <img
+                class="team-image"
+                alt="Marketing"
+                width="270"
+                src="./images/team/team-marketing-min.jpg"
+              />
+              <h3 class="name">Микола Тарасов</h3>
+              <p class="job">Marketing</p>
+            </article>
+          </li>
+          <li>
+            <article class="team-card">
+              <img
+                class="team-image"
+                alt="UI Designer"
+                width="270"
+                src="./images/team/team-ui-designer-min.jpg"
+              />
+              <h3 class="name">Михайло Єрмаков</h3>
+              <p class="job">UI Designer</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-    <script src="./script/app.js"></script>
-
-    <footer class="footer">
+    <footer class="homepage-footer">
       <a class="cite-logo footer-logo" href="/" rel="Домашня сторінка"><span>Web</span>Studio</a>
       <address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address>
       <a class="footer-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
       <a class="footer-phonenumber" href="tel:+380961111111">+38 096 111 11 11</a>
     </footer>
+
+    <script src="./script/app.js"></script>
   </body>
 </html>
